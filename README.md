@@ -19,37 +19,11 @@ A colorful, lightweight command-line HTTP client similar to Postman. Built with 
 
 Here's what the tool looks like in action:
 
+![HTTP CLI Screenshot](screenshot.png)
+
+**Example Command:**
 ```bash
-$ http-cli -u https://api.github.com/users/octocat -b "ghp_token123"
-```
-
-**Example Output:**
-
-```
- REQUEST 
-
-GET https://api.github.com/users/octocat
-
-Headers:
-  Authorization: Bearer ***
-
- RESPONSE 
-
-Status: 200 200 OK
-Time: 647.3208ms
-
-Body:
- {
-   "login": "octocat",
-   "id": 583231,
-   "avatar_url": "https://avatars.githubusercontent.com/u/583231?v=4",
-   "name": "The Octocat",
-   "company": "@github",
-   "location": "San Francisco",
-   "followers": 20843,
-   "following": 9,
-   "public_repos": 8
- }
+$ http-cli -u https://jsonplaceholder.typicode.com/posts/1
 ```
 
 **Visual Color Scheme:**
