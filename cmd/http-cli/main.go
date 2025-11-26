@@ -1,47 +1,42 @@
 package main
 
 import (
-	"fmt"
-	"os"
+    "fmt"
+    "os"
 
-	"github.com/I-invincib1e/http-cli/internal/client"
-	"github.com/I-invincib1e/http-cli/internal/config"
-	"github.com/I-invincib1e/http-cli/internal/output"
-	"github.com/I-invincib1e/http-cli/internal/styles"
+    "github.com/I-invincib1e/http-cli/internal/client"
+    "github.com/I-invincib1e/http-cli/internal/config"
+    "github.com/I-invincib1e/http-cli/internal/output"
+    "github.com/I-invincib1e/http-cli/internal/styles"
 )
 
+func exitError(msg string) {
+    fmt.Fprintf(os.Stderr, "Error: %v\n", msg)
+    os.Exit(1)
+}
+
 func main() {
-	// Parse command-line flags
-	cfg, err := config.ParseFlags()
-	if err != nil {
-		fmt.Fprintf(os.Stderr, "Error: %v\n", err)
-		os.Exit(1)
-	}
+    cfg, err := config.ParseFlags()
+    if err != nil {
+        exitError(err.Error())
+    }
 
-	// Validate configuration
-	if err := cfg.Validate(); err != nil {
-		fmt.Fprintf(os.Stderr, "Error: %v\n", err)
-		config.PrintUsage()
-		os.Exit(1)
-	}
+    if err := cfg.Validate(); err != nil {
+        fmt.Fprintf(os.Stderr, "Error: %v\n", err)
+        config.PrintUsage()
+        os.Exit(1)
+    }
 
-	// Initialize styles
-	st := styles.New()
+    st := styles.New()
+    output.DisplayRequest(cfg, st)
 
-	// Display request information
-	output.DisplayRequest(cfg, st)
+    resp, err := client.ExecuteRequest(cfg)
+    if err != nil {
+        exitError(err.Error())
+    }
 
-	// Execute HTTP request
-	resp, err := client.ExecuteRequest(cfg)
-	if err != nil {
-		fmt.Fprintf(os.Stderr, "Error: %v\n", err)
-		os.Exit(1)
-	}
-
-	// Display response
-	if err := output.DisplayResponse(cfg, resp, st); err != nil {
-		fmt.Fprintf(os.Stderr, "Error: %v\n", err)
-		os.Exit(1)
-	}
+    if err := output.DisplayResponse(cfg, resp, st); err != nil {
+        exitError(err.Error())
+    }
 }
 
