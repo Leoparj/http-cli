@@ -1,4 +1,4 @@
-module github.com/rex/http-cli
+module github.com/I-invincib1e/http-cli
 
 go 1.21
 
